@@ -1,0 +1,241 @@
+/*
+    Name: Joy Shi
+    CS 132 Spring 2022
+    Date: May 10th, 2022
+
+    This is my styles CSS for my E-Commerce store's landing page.
+    This helps my page correspond to the wireframe.
+*/
+
+/*---------- flex ----------*/
+body,
+header,
+#left-links,
+#right-links,
+#cart,
+.holes,
+#films, 
+#info-labels,
+#film-info,
+#cart-container,
+.film-purchase {
+  display: flex;
+}
+
+body,
+#film-info,
+#cart-container
+{
+  flex-direction: column;
+  
+}
+.film-purchase
+{
+  flex-direction: row;
+}
+
+
+#film-info{
+  align-items: center;
+}
+
+body {
+  background-color: #f1f1f1;
+  height: 100vh;
+}
+
+header svg {
+  width: 30px;
+  height: 30px;
+}
+
+#film-strip {
+  background-color: black;
+}
+
+.holes svg {
+  width: 10px;
+  height: 15px;
+  padding: 0%;
+  margin: 0 auto;
+  fill: #f1f1f1;
+}
+
+header {
+  height: 30px;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 3%;
+  padding-bottom: 2%;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+/*----text styles----*/
+body {
+  font-family: "Jost", Helvetica, sans-serif;
+  font-weight: 300;
+  
+}
+
+h1
+{
+  font-size: 20pt;
+  font-family: "Bodoni Moda";
+  font-weight: 900;
+}
+
+h2
+{
+
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+#info-labels {
+  font-weight: 100;
+}
+
+.film-purchase p, #total-box {
+  font-size: 15pt;
+  white-space: pre-line;
+}
+
+#cart a:link, 
+#cart a:visited
+#cart a:hover, 
+#cart a:active{
+  text-decoration: none;
+  color:black;
+}
+
+
+
+#left-links,
+#right-links {
+  width: 20%;
+}
+
+#right-links {
+  justify-content: right;
+}
+
+h2
+{
+  padding: 2%;
+}
+
+#left-links > a,
+svg,
+h1,
+#right-links p,
+h2, .film-purchase {
+  align-self: center;
+  margin: 0 10px 0 10px;
+}
+
+#search-line {
+  transform: translateX(8px) translateY(8px);
+}
+
+#top-holes {
+  padding-top: 1em;
+  padding-bottom: 5px;
+}
+
+#bottom-holes {
+  padding-top: 5px;
+  padding-bottom: 1em;
+}
+
+.holes rect {
+
+  height: 15px;
+  rx: 3px;
+}
+
+#films {
+  overflow-x: auto;
+}
+
+#films::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#films img {
+  width: 200px;
+  height: 300px;
+  margin-right: 10px;
+  opacity: 70%;
+}
+
+#cart-container img {
+  width: 100px;
+}
+
+
+
+/* -- info formatting -- */
+
+h2 {
+  padding: 3% 0% 0%;
+
+}
+
+#info-labels {
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+
+.info-label {
+  padding: 20px;
+
+}
+
+#film-info-text, h2,
+.film-purchase p {
+  text-align: center;
+}
+
+
+
+#info-box
+{
+  margin: 0%;
+  width: 50%;
+  justify-content: center;
+}
+
+#total-box {
+  text-align: center;
+  bottom: 3%;
+  right: 3%;
+  position: fixed;
+}
+
+.film-purchase {
+  width: 40%;
+  padding: 3% 0%;
+  justify-content: space-between;
+}
+
+.film-purchase p, #cart a {
+  position: relative;
+  top: 10%;
+}
+
+.film-purchase p {
+  top: 30%;
+}
+
+
